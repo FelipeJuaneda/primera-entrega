@@ -10,8 +10,6 @@ const navSlide = () =>{
 navSlide();
 
 
-
-
 //Verificacion de edades
 function verificarEdad(){
     let edad = document.getElementById("edad").value;
@@ -40,12 +38,14 @@ class Producto{
     }
 }
 
+
 //ARRAY
 const productos= [];
 productos.push(new Producto("Local 1", 5000,"3m x 4m"));
 productos.push(new Producto("Local 2", 7000, "5,5m x 5m"));
 productos.push(new Producto("Local 3", 8000, "6m x 6m"));
 productos.push(new Producto("Local 4", 10000, "8 x 7m"));
+
 
 //IF ELSE - PROMPT SI O NO
 let sioNo = prompt('¿Deseas saber locales disponibles?' + '\n' +'Responde con si o no');
