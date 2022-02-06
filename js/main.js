@@ -34,7 +34,7 @@ class Producto{
         this.precio = this.precio - valor;
     }
     mostrar(){
-        return "El " + Producto.local + " cuesta " + Producto.precio+ " pesos POR MES" + "\n"+ " Y cuenta con un espacio de " + Producto.espacio;
+        return "El " + producto.local + " cuesta " + producto.precio+ " pesos POR MES" + "\n"+ " Y cuenta con un espacio de " + producto.espacio;
     }
 }
 
@@ -46,10 +46,10 @@ productos.push(new Producto("Local 2", 7000, "5,5m x 5m"));
 productos.push(new Producto("Local 3", 8000, "6m x 6m"));
 productos.push(new Producto("Local 4", 10000, "8 x 7m"));
 
-alert(mostrar(productos[0]))
+console.log(productos[0]);
 
 //IF ELSE - PROMPT SI O NO
-/* let sioNo = prompt('¿Deseas saber locales disponibles?' + '\n' +'Responde con si o no');
+let sioNo = prompt('¿Deseas saber locales disponibles?' + '\n' +'Responde con si o no');
 if (sioNo=="si") {
     for (const producto of productos) {
         alert("El " + producto.local + " cuesta " + producto.precio+ " pesos POR MES" + "\n"+ " Y cuenta con un espacio de " + producto.espacio)
@@ -60,4 +60,4 @@ if (sioNo=="si") {
     }
 }   else{
     alert("No hay problema!")
-} */
+}
