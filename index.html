@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
     <title>Primera entrega de Proyecto Final</title>
 </head>
+
 <body>
+    <!-- HEADER - NAVEGADOR -->
+    <header>
+        <nav>
+            <div class="logo">
+                <span>LOGO</span>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="#">Inicio</a>
+                </li>
+                <li>
+                    <a href="#">Nosotros</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- VERIFICADOR DE EDAD -->
+    <div class="verificador">
+        <h1>Verifica tu edad</h1>
+        <div class="edadCont">
+            <label for="edad">Ingrese tu edad</label>
+            <input type="number" id="edad">
+            <button onclick="verificarEdad()">Verifique su Edad</button>
+        </div>
+    </div>
+
+
+
+    
     <script src="js/main.js"></script>
 </body>
+
 </html>
