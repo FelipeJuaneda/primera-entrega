@@ -62,7 +62,7 @@ if (sioNo=="si") {
 }
 
 //Busqueda
-let busquedaLocales = prompt("Ingrese 'Local(con mayusq) y su numero' para encontrar");
+let busquedaLocales = prompt("Ingrese 'Local (con L mayuscula) y su numero' para encontrar");
 let encontrado = productos.find(producto=> producto.local == busquedaLocales);
 if (encontrado) {
     alert("Local encontrado \n"+encontrado.local+ "\n Cuesta: " + encontrado.precio+ " pesos POR MES \n"+" Y cuenta con un espacio de " + encontrado.espacio)
