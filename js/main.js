@@ -25,7 +25,7 @@ function verificarEdad(){
 //CLASE
 class Producto{
     constructor(local, precio, espacio){
-        this.local=local;
+        this.local=local.toUpperCase();
         this.precio=precio;
         this.espacio=espacio;
     }
@@ -62,8 +62,8 @@ if (sioNo=="si") {
 }
 
 //Busqueda
-let busquedaLocales = prompt("Ingrese 'Local (con L mayuscula) y su numero' para encontrar");
-let encontrado = productos.find(producto=> producto.local == busquedaLocales);
+let busquedaLocales = prompt("Ingrese 'Local y su Numero' para encontrar");
+let encontrado = productos.find(producto=> producto.local == busquedaLocales.toUpperCase());
 if (encontrado) {
     alert("Local encontrado \n"+encontrado.local+ "\n Cuesta: " + encontrado.precio+ " pesos POR MES \n"+" Y cuenta con un espacio de " + encontrado.espacio)
 } else {
